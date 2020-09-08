@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Paises Intent Kotlin</string>
+    <string name="espana">España</string>
 </resources>
