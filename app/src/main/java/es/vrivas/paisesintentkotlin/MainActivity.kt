@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     /* Callback de respuesta al botón Portugal
         Se llama EXPRESAMENTE a la actividad Pais pasándole los datos que necesita
+        ¿por qué sigue sin funcionar el to-do en github al hacer el commit?
         @todo Pasar los datos que queremos a la actividad Pais
     */
     @Suppress("UNUSED_PARAMETER")
