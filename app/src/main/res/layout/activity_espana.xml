@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="match_parent"
+        android:layout_width="336dp"
         android:layout_height="41dp"
         android:text="@string/extension_espana" />
 
