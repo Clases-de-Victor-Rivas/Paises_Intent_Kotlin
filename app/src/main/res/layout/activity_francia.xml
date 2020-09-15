@@ -12,7 +12,7 @@
         android:id="@+id/tv_pais"
         android:layout_width="171dp"
         android:layout_height="wrap_content"
-        android:text="@string/espana"
+        android:text="@string/francia"
         android:textSize="30sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="71dp"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/extension_espana"
+        android:text="@string/extension_francia"
         android:textSize="24sp" />
 
     <TextView
@@ -31,6 +31,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/poblacion_espana"
+        android:text="@string/poblacion_francia"
         android:textSize="24sp" />
 </LinearLayout>

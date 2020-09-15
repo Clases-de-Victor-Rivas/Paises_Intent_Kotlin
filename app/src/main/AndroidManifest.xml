@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".EspanaActivity"></activity>
+        <activity android:name=".FranciaActivity"></activity>
+        <activity android:name=".PaisActivity"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

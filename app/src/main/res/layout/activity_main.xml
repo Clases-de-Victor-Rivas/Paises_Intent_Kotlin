@@ -7,11 +7,36 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="188dp"
+        android:id="@+id/bt_francia"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="francia_click"
+        android:text="@string/francia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_espana" />
+
+    <Button
+        android:id="@+id/bt_portugal"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="portugal_click"
+        android:text="@string/portugal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_espana" />
+
+    <Button
+        android:id="@+id/bt_espana"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-black"
         android:onClick="espana_click"
         android:text="@string/espana"
         app:layout_constraintStart_toStartOf="parent"
