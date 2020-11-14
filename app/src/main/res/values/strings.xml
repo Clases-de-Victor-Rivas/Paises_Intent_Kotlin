@@ -6,6 +6,8 @@
     <string name="francia">Francia</string>
     <string name="portugal">Portugal</string>
     <string name="pais">País</string>
-    <string name="extension_pais">Extensión: ? km2</string>
-    <string name="poblacion_pais">Población: ? hab.</string>
+    <string name="extension_pais">Extensión: # km2</string>
+    <string name="poblacion_pais">Población: # hab.</string>
+    <string name="espanol_euro_madrid">Español, Euro, Madrid</string>
+    <string name="tag_to_be_replaced">#</string>
 </resources>

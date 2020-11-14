@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
         i.putExtra("NOMBRE-PAIS", getString(R.string.francia))
         i.putExtra("EXTENSION-PAIS", 675_417)
         i.putExtra( "POBLACION-PAIS", 6_7028_048)
+        i.putExtra("OTROS-DATOS-PAIS", arrayOf<String>("Francés", "Euro", "París"))
+
         startActivity(i)
     }
 
@@ -48,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         i.putExtra(PARAM_COUNTRY_NAME, getString(R.string.portugal))
         i.putExtra(PARAM_EXTENSION, 92_090)
         i.putExtra(PARAM_POPULATION, 10_562_178)
+        i.putExtra(PARAM_OTHERS, arrayOf<String>("Portugués", "Euro", "Lisboa"))
         startActivity(i)
     }
 
@@ -55,5 +58,6 @@ class MainActivity : AppCompatActivity() {
         val PARAM_COUNTRY_NAME = "NOMBRE-PAIS"
         val PARAM_POPULATION = "POBLACION-PAIS"
         val PARAM_EXTENSION = "EXTENSION-PAIS"
+        val PARAM_OTHERS = "OTROS-DATOS-PAIS"
     }
 }
