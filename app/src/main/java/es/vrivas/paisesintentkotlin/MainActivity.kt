@@ -7,9 +7,7 @@ import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
-    val PARAM_COUNTRY_NAME = "NOMBRE-PAIS"
-    val PARAM_POPULATION = "POBLACION-PAIS"
-    val PARAM_EXTENSION = "EXTENSION-PAIS"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +26,12 @@ class MainActivity : AppCompatActivity() {
 
     /* Callback de respuesta al botón Francia
      Se llama EXPRESAMENTE a la actividad Pais pasándole los datos que necesita
+     El nombre de los parámetros se pasa usando cadenas ad-hoc
      */
     @Suppress("UNUSED_PARAMETER")
     fun francia_click(view: View) {
         val i = Intent(this, PaisActivity::class.java)
-        i.putExtra("NOMBRE-PAIS", R.string.francia)
+        i.putExtra("NOMBRE-PAIS", getString(R.string.francia))
         i.putExtra("EXTENSION-PAIS", 675_417)
         i.putExtra( "POBLACION-PAIS", 6_7028_048)
         startActivity(i)
@@ -41,14 +40,20 @@ class MainActivity : AppCompatActivity() {
 
     /* Callback de respuesta al botón Portugal
         Se llama EXPRESAMENTE a la actividad Pais pasándole los datos que necesita.
+        El nombre de los parámetros se pasa usando valores almacenados en constantes en la clase.
     */
     @Suppress("UNUSED_PARAMETER")
     fun portugal_click(view: View) {
         val i = Intent(this, PaisActivity::class.java)
-        i.putExtra(PARAM_COUNTRY_NAME, R.string.portugal)
+        i.putExtra(PARAM_COUNTRY_NAME, getString(R.string.portugal))
         i.putExtra(PARAM_EXTENSION, 92_090)
-        i.putExtra( PARAM_POPULATION, 10_562_178)
+        i.putExtra(PARAM_POPULATION, 10_562_178)
         startActivity(i)
     }
 
+    companion object MAIN_ACTIVITY{
+        val PARAM_COUNTRY_NAME = "NOMBRE-PAIS"
+        val PARAM_POPULATION = "POBLACION-PAIS"
+        val PARAM_EXTENSION = "EXTENSION-PAIS"
+    }
 }
