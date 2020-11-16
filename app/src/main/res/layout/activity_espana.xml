@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".EspanaActivity">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_pais"
@@ -13,9 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/espana"
         android:textSize="30sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tv_extension"
@@ -34,10 +33,12 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/tv_lengua_moneda_capital_espana"
+        android:id="@+id/tv_espanol_euro_madrid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/espanol_euro_madrid"
         android:textSize="24sp" />
+
+
 </LinearLayout>

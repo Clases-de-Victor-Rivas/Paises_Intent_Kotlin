@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         try {
             val i = Intent(this, EspanaActivity::class.java)
             startActivity(i)
+            (view as TextView).text=getString(R.string.espana)+" (V)"
         } catch ( e: ActivityNotFoundException ){
             Snackbar.make( view,
                 "espana_click: Activity Not Found",
@@ -44,8 +46,8 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("EXTENSION-PAIS", 675_417)
             i.putExtra( "POBLACION-PAIS", 6_7028_048)
             i.putExtra("OTROS-DATOS-PAIS", arrayOf<String>("Francés", "Euro", "París"))
-
             startActivity(i)
+            (view as TextView).text=getString(R.string.francia)+" (V)"
         } catch ( e: ActivityNotFoundException ){
             Snackbar.make( view,
                 "francia_click: Activity Not Found",
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             i.putExtra(PARAM_POPULATION, 10_562_178)
             i.putExtra(PARAM_OTHERS, arrayOf<String>("Portugués", "Euro", "Lisboa"))
             startActivity(i)
+            (view as TextView).text=getString(R.string.portugal)+" (V)"
         } catch ( e: ActivityNotFoundException ){
             Snackbar.make( view,
                 "portugal_click: Activity Not Found",
